@@ -30,7 +30,7 @@ mongoose.connection.on('connected', () => {
 });
 
 mongoose.connection.on('error', (err) => {
-    console.error('error in connecting to mongo instance ', err);
+    console.error('error in connecting to mongo instance', err);
 });
 
 app.get('/', requireAuth, (req, resp) => {
